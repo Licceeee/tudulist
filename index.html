@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tuDuList</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <script src="src/js/script.js" defer></script>
+
+</head>
+
+<body>
+    <header class="shadow">
+        <div class="container-fluid bg-darker">
+            <div class="container">
+                <nav class="navbar navbar-expand-md navbar-light bg-faded justify-content-center">
+                    <a href="/" class="navbar-brand d-flex w-50">
+                        <span><i class="fas fa-list"></i> TuDuList</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                    <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+                        <ul class="navbar-nav w-100 justify-content-center">
+                            <li class="nav-item active">
+                                <form class="form-inline">
+                                    <div class="md-form my-0">
+                                        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                                    </div>
+                                </form>
+                            </li>
+                        </ul>
+
+                        <ul class="nav navbar-nav ml-auto w-100 justify-content-end nav-right">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About </a>
+                            </li>
+                            <li class="nav-item shadow-sm rounded">
+                                <a class="nav-link btn btn-outline-light rounded" href="#"> Sign In/Up</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="container main-container pb-5">
+        <div class="col-12">
+            <h1 id="list-title" class="center">Tu Du List</h1>
+        </div>
+        <div class="row">
+
+
+            <div class="col-12 col-lg-6 shadow row m-0 pt-3">
+                <h3>Open Tasks</h3>
+
+                <div class="col-12 pb-2">
+                    <div class="input-group col-12">
+                        <input id="add-task-input" type="text" class="form-control form-control-lg add-task" placeholder="Add task ...">
+                        <button id="btn-add-task" class="input-group-text btn-danger" id="add-task-btn">
+                             + 
+                        </button>
+                    </div>
+                </div>
+                <ul id="task-list" class="col-12">
+                    <!-- Placeholder dynamic list -->
+                </ul>
+
+            </div>
+
+            <div class="col-12 order-lg-first col-lg-3 pt-3">
+                <h5>Done tasks</h5>
+                <ul class="ml-0" id="task-list-done">
+                    <!-- Placeholder for dynamic done tasks list -->
+                </ul>
+                <h5>Deleted tasks</h5>
+                <ul class="ml-0" id="task-list-deleted">
+                    <!-- Placeholder for dynamic deleted tasks list -->
+                </ul>
+                <button id="delete-all-tasks" class="btn btn-danger btn-sm" hidden>Delete permanently</button>
+            </div>
+
+
+            <div class="col-12 col-lg-3 pt-3 right">
+                <div class="row">
+                    <div class="col-6 col-md-12">
+                        <h4>Collaborators</h4>
+                        <div class="row">
+                            <div class="col-12 col-md-4 center">
+                                <img src="https://img.icons8.com/bubbles/2x/brunette-girl-art-palette.png" class="rounded mx-auto d-block college" alt="...">
+                                <h6>Emeline</h6>
+                            </div>
+                            <div class="col-12 col-md-4 center">
+                                <img src="https://img.icons8.com/bubbles/2x/user-male.png" class="rounded mx-auto d-block college" alt="...">
+                                <h6>Tim</h6>
+                            </div>
+                            <div class="col-12 col-md-4 center">
+                                <img src="https://img.icons8.com/bubbles/2x/brunette-girl-art-palette.png" class="rounded mx-auto d-block college" alt="...">
+                                <h6>Alicia</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-12">
+                        <h4 class="mt-5">Stats</h4>
+                        <p>Open Tasks: <strong id="nr-open-tasks">0</strong></p>
+                        <p>Done Tasks: <strong id="nr-done-tasks">0</strong></p>
+                        <p>Deleted Tasks: <strong id="nr-deleted-tasks">0</strong></p>
+                    </div>
+
+                </div>
+            </div>
+
+    </main>
+
+
+    <footer class="container-fluid border-top pt-4 bg-light">
+        <div class="container footer">
+
+
+            <div class="col-12 col-md-4 left">
+                <h5 class="pb-3">About Us</h5>
+                <span class="sign-border rounded p-2"><i class="fas fa-list"></i> TuDuList</span>
+                <a href="#" class="block-links pt-3">Impressum</a>
+                <a href="#" class="block-links">Privacy</a>
+                <a href="#" class="block-links">Carrier</a>
+
+
+            </div>
+
+            <div class="col-12 col-md-4 center">
+                <h5 class="pb-3">Contact TuDuList</h5>
+                <a href="#" class="block-links">WhatsApp: +49 01 234 567 89</a>
+                <a href="#" class="block-links">Facebook: facebook.com</a>
+                <a href="#" class="block-links">Twitter: TuDuList</a>
+                <a href="#" class="block-links">LinkedIn: TuDuList</a>
+                <a href="mailto:name@email.com" class="block-links">TuDuList@info.com</a>
+                <a href="https://github.com/timjoschneider/tuDuList" class="block-links">GitHub: TuDuList</a>
+
+            </div>
+
+            <div class="col-12 col-md-4 right">
+                <h5 class="pb-3">Share TuDuList</h5>
+                <a href="#" id="share-wa" class="sharer button">
+                    <i class="fab fa-2x fa-whatsapp"></i>
+                </a>
+                <a href="#" id="share-fb" class="sharer button">
+                    <i class="fab fa-2x fa-facebook"></i>
+                </a>
+                <a href="#" id="share-tw" class="sharer button">
+                    <i class="fab fa-2x fa-twitter"></i>
+                </a>
+                <a href="#" id="share-li" class="sharer button">
+                    <i class="fab fa-2x fa-linkedin"></i>
+                </a>
+                <!-- google+ gelöscht -->
+                <a href="#" id="share-em" class="sharer button">
+                    <i class="fas fa-2x fa-at"></i>
+                </a>
+                <!-- selbst geschafft git hub einzufügen...fa-lg in fa-2x umgewandelt (erst google gebraucht, dann gemerkt, oben ist ja das gleiche) -->
+                <a href="https://github.com/timjoschneider/tuDuList" title="GitHub Profile" target="_blank">
+                    <i class="fab fa-github fa-2x"></i>
+                </a>
+            </div>
+
+            <div class="col-12 py-5 center">
+                2021 © Copyright: Emeline, Alicia, Tim
+                <a class="text-white link-end" href="#">TuDuList</a>
+            </div>
+        </div>
+
+
+    </footer>
+
+
+</body>
+
+</html>
