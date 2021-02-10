@@ -1,4 +1,3 @@
 # todolist
 
-
-https://licceeee.github.io/todolist/
+https://licceeee.github.io/tudulist/
